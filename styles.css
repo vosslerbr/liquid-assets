@@ -1,0 +1,24 @@
+/*
+font-family: 'Lato', sans-serif;
+font-family: 'Titan One', cursive;
+*/
+
+nav {
+    display: flex;
+    padding: 32px;
+    background-color: #460874;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+}
+
+footer {
+    padding: 32px;
+    background-color: #460874;
+}
