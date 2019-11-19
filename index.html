@@ -1,46 +1,650 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="reset.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Titan+One&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="styles.css">
-    <title>Liquid Assets - Sartell, MN</title>
-</head>
-<body>
 
-    <nav>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="reset.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Titan+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Liquid Assets - Sartell, MN</title>
+</head>
+
+<body>
+  <main>
+    <div class="nav-header">
+      <nav>
         <img src="liquid-assets.svg" alt="" width="290">
         <ul>
-            <li>Menu</li>
-            <li>About</li>
-            <li>Contact</li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-    </nav>
+      </nav>
 
-    <header>
-        <h1>More than just a coffee house.</h1>
-        <h2>Sartell's favorite place to grab a coffee is back and better than ever!</h2>
-        <a href="#menu">See our new menu</a>
-    </header>
+
+      <header>
+        <div class="header">
+          <h1>More than just a coffee house.</h1>
+          <h2>Sartell's favorite place to grab a coffee is back and better than ever!</h2>
+          <a href="#menu">See our new menu</a>
+        </div>
+      </header>
+    </div>
 
     <section id="menu">
-        <h3>Menu</h3>
+      <h3>Menu</h3>
+      <div class="menu-section" id="breakfast">
+        <div class="menu-section-title" id="breakfast-title" onclick="showHide('breakfast')">
+          <h4>Breakfast</h4>
+          <div class="arrow">
+            <div class="arrow-piece" id="piece-left"></div>
+            <div class="arrow-piece" id="piece-right"></div>
+          </div>
+        </div>
+
+        <div id="breakfast-content">
+          <div class="menu-item">
+            <h6>Batta, Bagel, or Wrap</h6>
+            <p class="item-description">Batta served on grilled Ciabatta bread</br>Wraps served on grilled tortilla</p>
+            <div class="menu-item-option">
+              <div class="option-price">
+                <p class="option">Egg</p>
+                <p class="price">2.99</p>
+              </div>
+              <!--<p>item description if needed</p>-->
+            </div>
+            <div class="menu-item-option">
+              <div class="option-price">
+                <p class="option">Egg & Cheese</p>
+                <p class="price">3.19</p>
+              </div>
+              <!--<p>item description if needed</p>-->
+            </div>
+            <div class="menu-item-option">
+              <div class="option-price">
+                <p class="option">Egg, Meat, & Cheese</p>
+                <p class="price">3.49</p>
+              </div>
+              <p class="item-description">Bacon, Sausage, or Ham</p>
+            </div>
+            <div class="menu-item-option">
+              <div class="option-price">
+                <p class="option">Veggie</p>
+                <p class="price">3.49</p>
+              </div>
+              <p class="item-description">Egg, cheese, artichokes, red peppers, and mushrooms</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+
+            <h6>Breakfast Bowl</h6>
+            <p class="price">3.49</p>
+
+            <p class="item-description">Egg, cheese, and choice of meat served in a bowl</p>
+          </div>
+
+          <div class="menu-item">
+
+            <h6>Yogurt Parfait</h6>
+            <p class="price">3.19</p>
+
+          </div>
+
+          <div class="menu-item">
+            <h6>Toast</h6>
+            <p class="price">1.99</p>
+          </div>
+
+          <div class="menu-item">
+            <h6>Toasted Bagel</h6>
+            <div class="menu-item-option">
+              <div class="option-price">
+                <p class="option">Plain or Everything</p>
+                <p class="price">2.29</p>
+              </div>
+              <!--<p>item description if needed</p>-->
+            </div>
+            <div class="menu-item-option">
+              <div class="option-price">
+                <p class="option">Add Peanut Butter or Cream Cheese</p>
+                <p class="price">2.99</p>
+              </div>
+              <!--<p>item description if needed</p>-->
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="menu-section" id="salads">
+        <div class="menu-section-title" id="salads-title" onclick="showHide('salads')">
+          <h4>Salads</h4>
+          <div class="arrow">
+            <div class="arrow-piece" id="piece-left"></div>
+            <div class="arrow-piece" id="piece-right"></div>
+          </div>
+        </div>
+
+        <div id="salads-content">
+
+          <div class="menu-item salads-item">
+            <div class="name-and-price">
+              <h6>Buffalo Chicken</h6>
+              <p class="price">8.99</p>
+            </div>
+            <p class="item-description">Chicken with buffalo sauce, served on a bed of lettuce with shredded mozzarella and shredded carrots</p>
+          </div>
+
+          <div class="menu-item salads-item">
+            <div class="name-and-price">
+              <h6>Chicken Pecan</h6>
+              <p class="price">8.99</p>
+            </div>
+            <p class="item-description">Chicken, lettuce, craisins, pecans, shredded mozzarella, & raspberry vinaigrette</p>
+          </div>
+
+          <div class="menu-item salads-item">
+            <div class="name-and-price">
+              <h6>Tuna</h6>
+              <p class="price">8.59</p>
+            </div>
+            <p class="item-description">Tuna salad served on a bed of lettuce with mozzarella and choice of dressing</p>
+          </div>
+
+          <div class="menu-item salads-item">
+            <div class="name-and-price">
+              <h6>Caesar</h6>
+              <p class="price">7.99</p>
+            </div>
+            <p class="item-description">A bed of lettuce, parmesan cheese, croutons, & Caesar dressing</p>
+            <p class="item-description">Add chicken for $1 more</p>
+          </div>
+
+          <div class="menu-item salads-item">
+            <div class="name-and-price">
+              <h6>Chef</h6>
+              <p class="price">8.99</p>
+            </div>
+            <p class="item-description">Ham, turkey, shredded cheddar, shredded carrots, diced tomatoes, cucumber, egg, & croutons on a bed of lettuce with choice of dressing</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-section" id="sandwiches">
+        <div class="menu-section-title" id="sandwiches-title" onclick="showHide('sandwiches')">
+          <h4>Sandwiches</h4>
+          <div class="arrow">
+            <div class="arrow-piece" id="piece-left"></div>
+            <div class="arrow-piece" id="piece-right"></div>
+          </div>
+        </div>
+
+        <div id="sandwiches-content">
+          <div class="menu-item sandwiches-item">
+            <div class="name-and-price">
+              <h6>Asian Chicken or Beef</h6>
+              <p class="price">8.59</p>
+            </div>
+            <p class="item-description">Chicken or roast beef, mozzarella cheese, asian noodles, toasted almonds, mandarin oranges, lettuce, & asian sesame dressing</p>
+          </div>
+
+          <div class="menu-item sandwiches-item">
+            <div class="name-and-price">
+              <h6>Kamp</h6>
+              <p class="price">8.59</p>
+            </div>
+            <p class="item-description">Grilled chicken, provolone cheese, roasted red peppers, lettuce, & pesto mayo</p>
+          </div>
+
+          <div class="menu-item sandwiches-item">
+            <div class="name-and-price">
+              <h6>Reuben</h6>
+              <p class="price">8.59</p>
+            </div>
+            <p class="item-description">Corned beef, swiss cheese, sauerkraut, & thousand island dressing</p>
+          </div>
+
+          <div class="menu-item sandwiches-item">
+            <div class="name-and-price">
+              <h6>Rachel</h6>
+              <p class="price">8.59</p>
+            </div>
+            <p class="item-description">Smoked turkey, swiss cheese, sauerkraut, & thousand island dressing</p>
+          </div>
+
+          <div class="menu-item sandwiches-item">
+            <div class="name-and-price">
+              <h6>Cuban</h6>
+              <p class="price">8.59</p>
+            </div>
+            <p class="item-description">Ham, hard salami, provolone cheese, pickles, & homemade mustard</p>
+          </div>
+
+          <div class="menu-item sandwiches-item">
+            <div class="name-and-price">
+              <h6>Buffalo Chicken</h6>
+              <p class="price">8.59</p>
+            </div>
+            <p class="item-description">Chicken, buffalo sauce, pepper jack cheese, lettuce, & a side of ranch or blue cheese dressing</p>
+          </div>
+
+          <div class="menu-item sandwiches-item">
+            <div class="name-and-price">
+              <h6>BLT</h6>
+              <p class="price">8.59</p>
+            </div>
+            <p class="item-description">Bacon, lettuce, tomato, & mayo</p>
+          </div>
+
+          <div class="menu-item sandwiches-item">
+            <div class="name-and-price">
+              <h6>LA Grilled</h6>
+              <p class="price">8.59</p>
+            </div>
+            <p class="item-description">Bacon, cheddar cheese, & provolone cheese</p>
+          </div>
+
+          <div class="menu-item sandwiches-item">
+            <div class="name-and-price">
+              <h6>Grilled Cheese</h6>
+              <p class="price">8.59</p>
+            </div>
+            <p class="item-description">Cheddar cheese & provolone cheese</p>
+          </div>
+
+          <div class="menu-item sandwiches-item">
+            <div class="name-and-price">
+              <h6>Veggie Muff</h6>
+              <p class="price">8.59</p>
+            </div>
+            <p class="item-description">Artichoke hearts, roasted red peppers, mushrooms, green olives, provolone cheese, & pesto mayo</p>
+          </div>
+
+          <div class="menu-item sandwiches-item">
+            <div class="name-and-price">
+              <h6>Kenzie</h6>
+              <p class="price">8.59</p>
+            </div>
+            <p class="item-description">Ham, turkey, bacon, tomato, lettuce, cheddar cheese, & pepper jelly</p>
+          </div>
+
+          <div class="menu-item sandwiches-item">
+            <div class="name-and-price">
+              <h6>Egg Salad</h6>
+              <p class="price">8.59</p>
+            </div>
+            <p class="item-description">Egg with mayo, mustard, & lettuce</p>
+          </div>
+
+          <div class="menu-item sandwiches-item">
+            <div class="name-and-price">
+              <h6>Tuna Salad</h6>
+              <p class="price">8.59</p>
+            </div>
+            <p class="item-description">Tuna with mayo, provolone cheese, & lettuce</p>
+          </div>
+
+          <div class="menu-item sandwiches-item">
+            <div class="name-and-price">
+              <h6>Cranberry Chicken Salad</h6>
+              <p class="price">8.59</p>
+            </div>
+            <p class="item-description">Seasoned chicken, craisins, mayo, & lettuce</p>
+          </div>
+
+          <div class="menu-item sandwiches-item">
+            <div class="name-and-price">
+              <h6>Chipotle Roast Beef</h6>
+              <p class="price">8.59</p>
+            </div>
+            <p class="item-description">Roast beef, pepper jack cheese, tomato, lettuce, & chipotle mayo</p>
+          </div>
+
+          <div class="menu-item sandwiches-item">
+            <div class="name-and-price">
+              <h6>Combo</h6>
+              <p class="price">8.59</p>
+            </div>
+            <p class="item-description">Ham, turkey, cheddar cheese, tomato, lettuce, & mayo</p>
+          </div>
+
+          <div class="menu-item sandwiches-item">
+            <div class="name-and-price">
+              <h6>Ham</h6>
+              <p class="price">8.59</p>
+            </div>
+            <p class="item-description">Ham, swiss cheese, tomato, lettuce, & homemade mustard</p>
+          </div>
+
+          <div class="menu-item sandwiches-item">
+            <div class="name-and-price">
+              <h6>Smoked Turkey</h6>
+              <p class="price">8.59</p>
+            </div>
+            <p class="item-description">Smoked turkey, cheddar cheese, tomato, lettuce, & homemade mustard</p>
+          </div>
+
+          <div class="menu-item sandwiches-item">
+            <div class="name-and-price">
+              <h6>Corned Beef</h6>
+              <p class="price">8.59</p>
+            </div>
+            <p class="item-description">Corned beef, swiss cheese, lettuce, & homemade mustard</p>
+          </div>
+
+          <div class="menu-item sandwiches-item">
+            <div class="name-and-price">
+              <h6>Chicken Caesar</h6>
+              <p class="price">8.59</p>
+            </div>
+            <p class="item-description">Chicken, parmesan cheese, lettuce, & Caesar dressing</p>
+          </div>
+
+          <div class="menu-item sandwiches-item">
+            <div class="name-and-price">
+              <h6>Chicken or Turkey Club</h6>
+              <p class="price">8.59</p>
+            </div>
+            <p class="item-description">Chicken or smoked turkey, cheddar cheese, bacon, tomato, lettuce, & mayo</p>
+          </div>
+
+          <div class="menu-item sandwiches-item">
+            <div class="name-and-price">
+              <h6>Chicken or Turkey Bacon Ranch</h6>
+              <p class="price">8.59</p>
+            </div>
+            <p class="item-description">Chicken or smoked turkey, cheddar cheese, bacon, tomato, lettuce, & ranch dressing</p>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="menu-section" id="combos">
+        <div class="menu-section-title" id="combos-title" onclick="showHide('combos')">
+          <h4>Combos</h4>
+          <div class="arrow">
+            <div class="arrow-piece" id="piece-left"></div>
+            <div class="arrow-piece" id="piece-right"></div>
+          </div>
+        </div>
+
+        <div id="combos-content">
+          <div class="menu-item combo-item">
+            <div class="name-and-price">
+              <h6>Half sandwich & soup</h6>
+              <p class="price">8.59</p>
+            </div>
+            <!--<p class="item-description"></p>-->
+          </div>
+
+          <div class="menu-item combo-item">
+            <div class="name-and-price">
+              <h6>Half salad & soup</h6>
+              <p class="price">8.59</p>
+            </div>
+            <p class="item-description">Served with garlic bread stick</p>
+          </div>
+
+          <div class="menu-item combo-item">
+            <div class="name-and-price">
+              <h6>Bowl of soup</h6>
+              <p class="price">5.29</p>
+            </div>
+            <p class="item-description">Served with garlic bread stick</p>
+          </div>
+
+          <div class="menu-item combo-item">
+            <div class="name-and-price">
+              <h6>Garlic Bread Stick</h6>
+              <p class="price">.99</p>
+            </div>
+            <!--<p class="item-description"></p>-->
+          </div>
+        </div>
+
+
+
+
+      </div>
+
+      <div class="menu-section" id="kids">
+        <div class="menu-section-title" id="kids-title" onclick="showHide('kids')">
+          <h4>Kids Menu</h4>
+          <div class="arrow">
+            <div class="arrow-piece" id="piece-left"></div>
+            <div class="arrow-piece" id="piece-right"></div>
+          </div>
+        </div>
+
+        <div id="kids-content">
+          <div class="menu-item kids-item">
+            <div class="name-and-price">
+              <h6>Turkey Sandwich</h6>
+              <p class="price">2.99</p>
+            </div>
+            <p class="item-description">Turkey, cheddar cheese, & lettuce</p>
+          </div>
+
+          <div class="menu-item kids-item">
+            <div class="name-and-price">
+              <h6>Ham Sandwich</h6>
+              <p class="price">2.99</p>
+            </div>
+            <p class="item-description">Ham, cheddar cheese, & lettuce</p>
+          </div>
+
+          <div class="menu-item kids-item">
+            <div class="name-and-price">
+              <h6>Grilled Cheese Sandwich</h6>
+              <p class="price">2.79</p>
+            </div>
+            <p class="item-description">Cheddar cheese</p>
+          </div>
+
+          <div class="menu-item kids-item">
+            <div class="name-and-price">
+              <h6>Grilled Ham & Cheese Sandwich</h6>
+              <p class="price">2.99</p>
+            </div>
+            <p class="item-description">Ham & cheddar cheese</p>
+          </div>
+
+          <div class="menu-item kids-item">
+            <div class="name-and-price">
+              <h6>PB&J</h6>
+              <p class="price">2.79</p>
+            </div>
+            <p class="item-description">Peanut butter & jelly</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="menu-section" id="ice-cream">
+        <div class="menu-section-title" id="kids-title" onclick="showHide('ice-cream')">
+          <h4>Ice Cream</h4>
+          <div class="arrow">
+            <div class="arrow-piece" id="piece-left"></div>
+            <div class="arrow-piece" id="piece-right"></div>
+          </div>
+        </div>
+
+        <div id="ice-cream-content">
+          <div class="menu-item ice-cream-item">
+            <div class="name-and-price">
+              <h6>Cone or Dish</h6>
+              <p class="price">1.49</p>
+            </div>
+            <p class="item-description">Price per scoop</p>
+          </div>
+
+          <div class="menu-item ice-cream-item">
+            <div class="name-and-price">
+              <h6>Frenzy</h6>
+              <p class="price">4.39</p>
+            </div>
+            <p class="item-description">12oz</p>
+          </div>
+
+          <div class="menu-item ice-cream-item">
+            <div class="name-and-price">
+              <h6>Shake</h6>
+              <p class="price">3.59</p>
+            </div>
+            <!--<p class="item-description">12oz</p>-->
+          </div>
+
+          <div class="menu-item ice-cream-item">
+            <div class="name-and-price">
+              <h6>Sundae</h6>
+              <p class="price">3.39</p>
+            </div>
+            <!--<p class="item-description">12oz</p>-->
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="menu-section" id="baked-goods">
+        <div class="menu-section-title" id="kids-title" onclick="showHide('baked-goods')">
+          <h4>Baked Goods</h4>
+          <div class="arrow">
+            <div class="arrow-piece" id="piece-left"></div>
+            <div class="arrow-piece" id="piece-right"></div>
+          </div>
+        </div>
+
+        <div id="baked-goods-content">
+          <div class="menu-item ice-cream-item">
+            <div class="name-and-price">
+              <h6>Biscotti</h6>
+              <p class="price">1.59</p>
+            </div>
+            <!--<p class="item-description">Price per scoop</p>-->
+          </div>
+
+          <div class="menu-item ice-cream-item">
+            <div class="name-and-price">
+              <h6>Breakfast Round</h6>
+              <p class="price">1.59</p>
+            </div>
+            <!--<p class="item-description">Price per scoop</p>-->
+          </div>
+
+          <div class="menu-item ice-cream-item">
+            <div class="name-and-price">
+              <h6>Cookie (small)</h6>
+              <p class="price">.69</p>
+            </div>
+            <!--<p class="item-description">Price per scoop</p>-->
+          </div>
+
+          <div class="menu-item ice-cream-item">
+            <div class="name-and-price">
+              <h6>Cookie (large)</h6>
+              <p class="price">1.79</p>
+            </div>
+            <!--<p class="item-description">Price per scoop</p>-->
+          </div>
+
+          <div class="menu-item ice-cream-item">
+            <div class="name-and-price">
+              <h6>Muffin</h6>
+              <p class="price">2.29</p>
+            </div>
+            <!--<p class="item-description">Price per scoop</p>-->
+          </div>
+
+          <div class="menu-item ice-cream-item">
+            <div class="name-and-price">
+              <h6>Savanna Bar</h6>
+              <p class="price">2.99</p>
+            </div>
+            <!--<p class="item-description">Price per scoop</p>-->
+          </div>
+
+          <div class="menu-item ice-cream-item">
+            <div class="name-and-price">
+              <h6>Specialty Bar</h6>
+              <p class="price">2.99</p>
+            </div>
+            <!--<p class="item-description">Price per scoop</p>-->
+          </div>
+
+          <div class="menu-item ice-cream-item">
+            <div class="name-and-price">
+              <h6>Scone</h6>
+              <p class="price">2.99</p>
+            </div>
+            <!--<p class="item-description">Price per scoop</p>-->
+          </div>
+        </div>
+
+      </div>
     </section>
 
     <section id="about">
-        <h3>About</h3>
+      <h3>About</h3>
+
+      <div class="about-items">
+        <div class="about-item">
+          <p>Our goal is simple. We want your time spent with us at Liquid Assets to be an experience, not just another meal.</p>
+          <img src="header-bg.jpg" alt="" width="100%">
+        </div>
+        <div class="about-item">
+          <p>Our goal is simple. We want your time spent with us at Liquid Assets to be an experience, not just another meal.</p>
+          <img src="header-bg.jpg" alt="" width="100%">
+        </div>
+        <div class="about-item">
+          <p>Our goal is simple. We want your time spent with us at Liquid Assets to be an experience, not just another meal.</p>
+          <img src="header-bg.jpg" alt="" width="100%">
+        </div>
+        <div class="about-item">
+          <p>Our goal is simple. We want your time spent with us at Liquid Assets to be an experience, not just another meal.</p>
+          <img src="header-bg.jpg" alt="" width="100%">
+        </div>
+
+      </div>
+
+
+
+
     </section>
 
     <section id="contact">
-        <h3>Contact</h3>
+      <h3>Contact</h3>
+      <div class="contact-details">
+        <div class="map">
+          <img src="map-placeholder.png" alt="" width='100%'>
+        </div>
+        <div class="address-phone-social">
+          <h4 id="address-title">Address</h4>
+          <p id="address-detail">1091 2nd St S #600</br>Sartell, MN 56377</p>
+
+          <h4 id="phone-title">Phone</h4>
+          <p id="phone-detail">320-265-2654</p>
+
+          <h4>Follow Us</h4>
+          <div class="social-media">
+            <img src="" alt="">
+            <img src="" alt="">
+          </div>
+        </div>
+      </div>
     </section>
 
+
     <footer>
-        <img src="liquid-assets-small.svg" alt="" width="69">
+      <img src="liquid-assets-small.svg" alt="" width="69">
     </footer>
-    
+  </main>
+
+  <script type="text/javascript" src="index.js"></script>
 </body>
+
 </html>

@@ -1,24 +1,269 @@
+.arrow {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  width: 1rem
+}
+
+.arrow-piece {
+  border: 2px solid white;
+  height: 1rem;
+  border-radius: 400px;
+}
+
+#piece-left {
+  transform: rotate(-45deg) translateX(-5px);
+}
+
+#piece-right {
+  transform: rotate(45deg) translateX(5px);
+}
+
+
+
+
 /*
 font-family: 'Lato', sans-serif;
 font-family: 'Titan One', cursive;
 */
+body {
+  background-color: rgba(70, 8, 116, 0.9);
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  margin: auto;
+  width: 100%;
+  background: white;
+}
+
+.nav-header {
+  grid-column: 1 / -1;
+  background: linear-gradient(rgba(70, 8, 116, 0.6), rgba(70, 8, 116, 0.6)), url('header-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+}
+
+h1, h2 {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.25rem;
+  max-width: 100%;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: white;
+  max-width: 550px;
+  margin-bottom: 5.5rem;
+  letter-spacing: 0.15rem;
+  line-height: 1.75rem;
+}
+
+header a {
+  font-size: 1rem;
+  font-family: 'Lato', sans-serif;
+  border: 2px solid white;
+  border-radius: 15px;
+  text-decoration: none;
+  color: white;
+  padding: 1rem 2rem;
+  transition: 0.2s;
+}
+
+header a:hover {
+  background: white;
+  color: #460874;
+}
+
+
+h3 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  color: #460874;
+  font-family: 'Titan One', cursive;
+}
+
+h4 {
+  font-size: 1.75rem;
+  letter-spacing: .1rem;
+  font-family: 'Lato', sans-serif;
+}
+
+h5 {
+  font-family: 'Lato', sans-serif;
+  color: white;
+  margin-left: 0.5rem;
+  font-weight: lighter;
+}
 
 nav {
-    display: flex;
-    padding: 32px;
-    background-color: #460874;
-    align-items: center;
-    justify-content: space-between;
-    color: #fff;
-    font-family: 'Lato', sans-serif;
-    font-weight: bold;
+  grid-column: 1 / -1;
+  display: flex;
+  padding: 16px;
+  background-color: rgba(70, 8, 116, 0.5);
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  position: sticky;
+  top: 0;
 }
 
 nav ul {
-    display: flex;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 3rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+header {
+  grid-column: 1 / -1;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+section {
+  grid-column: 1 / -1;
+  background-color: #fff;
+  padding: 0 1rem;
+  margin: 4rem 0 6rem 0;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.map {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.map>img {
+  border-radius: 20px;
+}
+
+
+#address-detail, #phone-detail {
+  font-family: 'Lato', sans-serif;
+  color: #460874;
+  opacity: 0.75;
+  margin-bottom: 1rem;
 }
 
 footer {
-    padding: 32px;
-    background-color: #460874;
+  grid-column: 1 / -1;
+  padding: 16px;
+  background-color: #460874;
+}
+
+/* Menu */
+#menu {
+  max-width: 600px;
+}
+
+.menu-section {
+  margin-bottom: 3rem;
+}
+
+.menu-section-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #460874;
+  padding: 1rem;
+  color: white;
+  border-radius: 20px;
+}
+
+.menu-item {
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+div[id*="-content"] {
+  transition: max-height 0.5s ease-in-out;
+  max-height: 0;
+  overflow: hidden;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+h6 {
+  font-size: 1.25rem;
+  color: #460874;
+  margin-bottom: 0.5rem;
+}
+
+.item-description {
+  font-size: 0.75rem;
+  color: #460874;
+  opacity: 0.75;
+}
+
+.option-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
+}
+
+.option, .price {
+  font-size: 1rem;
+  color: #460874;
+}
+
+.name-and-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* About */
+
+
+.about-items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.about-item {
+  width: 50%;
+  margin-bottom: 3rem;
+}
+
+.about-item > p {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  color: #460874;
+  margin-bottom: 2rem;
+}
+
+.about-item img {
+  border-radius: 20px;
 }
