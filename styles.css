@@ -271,4 +271,5 @@ h6 {
   border-radius: 8px;
   margin-bottom: 1rem;
   filter: grayscale(1);
+  -webkit-filter: grayscale(1);
 }
