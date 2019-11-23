@@ -20,3 +20,10 @@ function showHide(id) {
     arrowToRotate.style.transform = 'rotate(180deg) translateX(10px) translateY(-3px)';
   }
 }
+
+addEventListener('scroll', function(e) {
+  console.log(window.pageYOffset / 500);
+  const scroll = window.pageYOffset;
+  const nav = document.getElementById('nav');
+  nav.style.backgroundColor = 'rgba(70, 8, 116, ' + scroll / 100 + ')';
+});
