@@ -270,4 +270,5 @@ h6 {
 .about-item img {
   border-radius: 8px;
   margin-bottom: 1rem;
+  filter: grayscale(1);
 }

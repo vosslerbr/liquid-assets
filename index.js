@@ -12,11 +12,11 @@ function showHide(id) {
   let arrowToRotate = document.getElementById(sectionArrow);
 
   // simple if statement to display or hide 'arg-content'
-  if (sectionToShow.style.maxHeight === '1000px') {
+  if (sectionToShow.style.maxHeight === '2000px') {
     sectionToShow.style.maxHeight = '0';
     arrowToRotate.style.transform = 'rotate(360deg)';
   } else {
-    sectionToShow.style.maxHeight = '1000px';
+    sectionToShow.style.maxHeight = '2000px';
     arrowToRotate.style.transform = 'rotate(180deg) translateX(10px) translateY(-3px)';
   }
 }
